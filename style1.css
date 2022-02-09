@@ -4,6 +4,10 @@
   padding:0;
 }
 
+body{
+  font-family: 'Lato', sans-serif;  
+}
+
 .row{
   width: 100%;
 }
@@ -44,19 +48,21 @@
   border-bottom: 2px solid #000;
 }
 
-#For-Desktop {
-  background-color: #9FE2BF;
+#title-one {
+  background-color: #D59898;
 } 
 
-#For-Tablet{
-  background-color:#6495ED;
+#title-two{
+  background-color: #C14543;
 }
 
-#For-Mobile{
-  background-color: #FFBF00;
+#title-three{
+  background-color: #E5D198;
 }
 
-@media (min-width: 992px){    /*For Desktop*/
+/* Simple Responsive Framework. */
+/*------ Desktop ------*/
+@media (min-width: 992px){
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;  
   }
@@ -99,8 +105,10 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 991px){ /*For Tablet*/
-  .col-lg-4 { 
+
+/*------ Tablet ------*/
+@media (min-width: 768px) and (max-width: 991px){
+  .col-lg-4 {
     width: 50%;
     float: left;
   }
@@ -111,7 +119,8 @@
 }
 
 
-@media (max-width: 767px){     /*For Mobile*/
+/*------ Mobile ------*/
+@media (max-width: 767px){
   .col-lg-4{
     width: 100%;
     float: left;
